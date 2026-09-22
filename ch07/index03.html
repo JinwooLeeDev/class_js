@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>ch07 index03.html 파일</h1>
+    <script>
+      // 1. || 논리합은 왼쪽부터 보다가 truthy를 만나면 그 값을 바로 돌려주고 멈춘다.
+      console.log(" 단락 평가 ");
+      console.log("hello" || "world");
+      console.log("" || "기본값");
+      console.log(null || undefined); // 논리합에서 둘다 false 나오면 마지막 값이 나옴
+
+      // 2. 활용 : 값이 없으면 기본값을 써라 를 한줄로 코드로 작성할 수 있다.
+      let nickName = "";
+      let displayName = nickName || "익명";
+      console.log(displayName);
+
+      // 3. 논리곱
+      //
+      console.log("hello" && "world");
+      console.log("" && "기본값");
+      console.log(null && 0 && "끝");
+      console.log(null && undefined);
+    </script>
+  </body>
+</html>
